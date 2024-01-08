@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>Checkout</title>
+        <link rel="stylesheet" href="/static/style.css">
+        <script src="{{ url_for('static', filename='main.js') }}"></script>
+    </head>
+    <body>
+        <form method="POST" id="checkout_form">
+            {{form.hidden_tag()}}
+            <div class="form-group">
+                <label for="card_number">{{ form.card_number.label }}</label>
+                {{ form.card_number(idsize=20) }}
+            </div>
+            <div>
+                {{ form.name_on_card.label }}<br>
+                {{ form.name_on_card(size=50) }}
+            </div>
+            <div>
+                {{ form.cvv.label }}<br>
+                {{ form.cvv(size=3) }}
+            </div>
+            <div>
+                {{form.expiry_date.label}}<br>
+                {{form.expiry_date(size=7)}}
+            </div>
+            {{ form.submit() }}
+        </form>
+        {% for field, errors in form.errors.items() %}
+        <ul class="errors">
+            {% for error in errors %}
+            <li>{{ error}}</li>
+            {% endfor %}
+        </ul>
+        {% endfor %}
+    </body>
+</html>

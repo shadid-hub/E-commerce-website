@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>Bean Factory</title>
+        <link rel='stylesheet' href='/static/style.css'>
+        <script src="{{ url_for('static', filename='main.js') }}"></script>
+    </head>
+    <body>
+        <header>
+            <h1>The bean Factory</h1>
+            <img src='/static/img/logo.jpg.png' id="logo">
+            <nav>
+                <a href="{{ url_for('home')}}">Home</a> |
+                <a href="{{url_for('scart')}}">
+                    Shopping Cart: {{session.get("scart")|length if session.get("scart") else 0}}
+                </a>
+            </nav>
+        </header>
+        <div>
+            <button onclick="sort('name','asc')"> Sort BY Name(A-Z)</button>
+            <button onclick="sort('name','desc')"> Sort BY Name(Z-A)</button>
+            <button onclick="sort('price','asc')"> Sort BY Price(Low-High)</button>
+            <button onclick="sort('price','desc')"> Sort BY Price(High-Low)</button>
+            <button onclick="sort('CF','asc')"> Sort BY CF(Low-High)</button>
+            <button onclick="sort('CF','desc')"> Sort BY CF(High-Low)</button>
+        </div>
+            <div class="bag">
+                {% for bean in beans%}
+            <div class='bean'>
+                <a href="/bean/{{bean.id}}">
+                <img src="{{bean.img_src}}">  
+                <h2>{{bean.name}}</h2>
+                <p>£{{bean.price}}</p>
+                <b>Carbon Footprint {{bean.CF}}</b>
+                </a>
+                <a href="/add_to_scart/{{bean.id}}">
+                    <button>Buy</button>
+                </a>
+                </div>       
+            {% endfor%}
+            </div>
+            <script>
+                function sort(sort_by, order) {
+                    window.location.href = '/?sort_by=' + sort_by + '&order=' + order;
+                }
+            </script>
+        
+    </body>
+</html>
