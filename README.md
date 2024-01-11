@@ -1,16 +1,20 @@
 # E-commerce Website Project
 
 ## Overview
-This project involves creating an E-commerce website, allowing customers to browse goods, add them to a shopping basket, and view their total before checkout. It's designed as a front-end showcase using HTML, CSS, and JavaScript, with server-side development simulated using Python and Flask.
+This project is a fully functional E-commerce website, designed to provide a seamless online shopping experience. Customers can browse products, add them to a shopping cart, and view their total before checking out.
 
 ## Key Features
-- Product browsing: Customers can view available goods with detailed information.
-- Shopping basket: Users can add items and view their total cost.
-- User interface: Designed with HTML, CSS, and JavaScript for an engaging experience.
-- Server-side simulation: Python and Flask used to mimic server-side functionalities.
+- Product browsing with detailed information.
+- Shopping cart functionality.
+- Interactive UI designed with HTML, CSS, and JavaScript.
+- Backend simulated with Python and Flask.
+- Data storage using SQLite, ensuring efficient handling of product and transaction data.
 
 ## Technology Stack
 - Front-end: HTML, CSS, JavaScript
-- Back-end: Python, Flask (for simulation purposes)
+- Back-end: Python, Flask
+- Database: SQLite
 
+## Live Demo
+The website is hosted and can be viewed here: [Live Website](https://your-github-username.github.io/repository-name/)
 
