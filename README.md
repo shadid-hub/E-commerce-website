@@ -16,5 +16,5 @@ This project is a fully functional E-commerce website, designed to provide a sea
 - Database: SQLite
 
 ## Live Demo
-The website is hosted and can be viewed here: [Live Website](https://your-github-username.github.io/repository-name/)
+The website is hosted and can be viewed here: https://shadid-hub.github.io/E-commerce-website/
 
