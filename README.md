@@ -15,6 +15,18 @@ This project is a fully functional E-commerce website, designed to provide a sea
 - Back-end: Python, Flask
 - Database: SQLite
 
-## Live Demo
-The website is hosted and can be viewed here: https://shadid-hub.github.io/E-commerce-website/
+# Running the Website in GitHub Codespace
+
+1. Open this repository in GitHub and initiate a Codespace.
+2. Once in Codespaces, a VSCode-like environment will open in your browser.
+3. Open the integrated terminal within the Codespace.
+4. Install the required Python packages (listed in `Necessary technology to use.txt`) using:
+   ```bash
+   pip install -r "Necessary technology to use.txt"
+5. Run the Flask application using: "python app.py" in the terminal
+
+
+   
+
+
 
