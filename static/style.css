@@ -1,126 +1,121 @@
-*{
-    margin:0;
-    padding:0;
+* {
+   margin: 0;
+   padding: 0;
 }
 
 header {
-    background-color: #121418;
-    padding:20px;
-    text-align: center;
+   background-color: #121418;
+   padding: 20px;
+   text-align: center;
 }
 
 header h1 {
-    color:#333;
-    font-size: 24px;
-    margin-bottom: 10px;
-
+   color: #333;
+   font-size: 24px;
+   margin-bottom: 10px;
 }
 
 .bag {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    margin-top: 20px;
+   display: flex;
+   flex-wrap: wrap;
+   justify-content: center;
+   margin-top: 20px;
 }
 
 .bean img {
-    width: 100%;
-    height: auto;
-    margin-bottom: 10px;
+   width: 100%;
+   height: auto;
+   margin-bottom: 10px;
 }
 
 .bean h2 {
-    font-size: 18px;
-    margin-bottom: 5px;
+   font-size: 18px;
+   margin-bottom: 5px;
 }
 
 .bean p {
-    font-size:16px;
-    color: #888;
-    margin-bottom: 10px;
+   font-size: 16px;
+   color: #888;
+   margin-bottom: 10px;
 }
 
 .bean {
-    width: 90%;
-    margin: 20px;
-    background-color:#FFF;
-    box-shadow: 0 2px 5px rgb(0,0,0,0.1);
-    text-align: center;
-    transition: transform 0.2s, box-shadow 0.2s; /* because it shakes like crazy */
-    padding: 20px;
-    border-radius: 5px;
-    overflow: hidden;
-    cursor: pointer;
-  
- }
+   max-width: 300px; 
+   margin: 20px;
+   background-color: #FFF;
+   box-shadow: 0 2px 5px rgb(0,0,0,0.1);
+   text-align: center;
+   transition: transform 0.2s, box-shadow 0.2s;
+   padding: 20px;
+   border-radius: 5px;
+   overflow: hidden;
+   cursor: pointer;
+}
 
- @media (min-width:550px) {
-    .bean{
-      width: 80%;
-    }
- }
+@media (min-width: 550px) {
+   .bean {
+       width: 45%;
+   }
+}
 
- @media (mind-width:750px){
-    .bean{
-        width: 50%
-    }
- }
+@media (min-width: 750px) {
+   .bean {
+       width: 30%;
+   }
+}
 
+@media (min-width: 992px) {
+   .bean {
+       width: 22%;
+   }
+}
 
- @media(min-width:992px){
-    .bean{
-        width: 30%
-    }
- }
- 
- 
- .bean:hover{
-    transform: scale(1.05);
-    box-shadow: 0 2px 10px rgb(0,0,0,0.2);
-    background-color: greenyellow;
- }
- 
- .button{
-    background-color: rgb(163, 207, 102);
-    height: 80x;
-    width: 150px;
-    cursor: pointer;
-    border: none;
-    border-radius: 8px;
-    border-radius: 18px;
-    font-size: 14px;
-    transition-duration:0.4s ;
-    display: inline-block;
+.bean:hover {
+   transform: scale(1.05);
+   box-shadow: 0 2px 10px rgb(0,0,0,0.2);
+   background-color: greenyellow;
+}
 
- }
- .button:hover{
-    background-color: green;
- }
+.button {
+   background-color: rgb(163, 207, 102);
+   height: 40px; 
+   width: auto; 
+   cursor: pointer;
+   border: none;
+   border-radius: 18px;
+   font-size: 14px;
+   padding: 0 15px; 
+   transition-duration: 0.4s;
+   display: inline-block;
+   text-align: center; 
+}
 
- body{
-    background-color: #f6f6f6;
- }
+.button:hover {
+   background-color: green;
+}
 
- #total-price{
-    position:sticky;
-    top: 0;
-    background: green;
-    padding: 10px;
-    border-radius: 5px;
-    z-index: 999;
+body {
+   background-color: #f6f6f6;
+}
 
+#total-price {
+   position: sticky;
+   top: 0;
+   background: green;
+   padding: 10px;
+   border-radius: 5px;
+   z-index: 999;
+}
 
- }
+#checkout_form {
+   width: 70%;
+   margin: 20px auto;
+   padding: 15px;
+   border-radius: 10px;
+   box-shadow: 0px 0px 10px rgba(0,0,0,0.15);
+}
 
- #checkout_form{
-    width:70%;
-    margin: 20x auto;
-    padding:15px;
-    border-radius:10px;
-    box-shadow: 0px 0px 10px rgba(0,0,0,0.15);
- }
-
- #checkout_form lable{
-    display:block;
-    margin-bottom: 5px;
- }
+#checkout_form label {
+   display: block;
+   margin-bottom: 5px;
+}
